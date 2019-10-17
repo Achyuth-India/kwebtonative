@@ -1,0 +1,6 @@
+framework module KWebToNative {
+  umbrella header "KWebToNative-umbrella.h"
+
+  export *
+  module * { export * }
+}

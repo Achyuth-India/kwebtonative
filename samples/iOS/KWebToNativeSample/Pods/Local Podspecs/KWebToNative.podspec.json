@@ -1,0 +1,19 @@
+{
+  "name": "KWebToNative",
+  "version": "0.0.1",
+  "summary": "KWebToNative is bridge wrapper between javascript and WKWebview",
+  "homepage": "https://www.kobil.com",
+  "license": "MIT",
+  "authors": {
+    "Lokesh Ravichandru": "Lokesh.ravichandru@kobil.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "KWebToNative",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}

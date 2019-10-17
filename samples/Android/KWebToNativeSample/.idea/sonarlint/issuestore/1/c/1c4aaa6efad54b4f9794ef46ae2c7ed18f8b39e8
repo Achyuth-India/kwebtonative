@@ -1,0 +1,9 @@
+
+qsquid:S00116"RRename this field "_client" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßòÖ»8ç—Ø¥İ-
+Lsquid:S1172L".Remove this unused method parameter "webView".(„½Ü¹8Ù¼Î¥İ-
+rsquid:S00116"SRename this field "_webview" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¶Ù¶8»™®İ-
+tsquid:S00116"URename this field "_listeners" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÒø§8ª“«İ-
+psquid:S3008"RRename this field "_shared" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äøÎÃ8ä²¥İ-
+ˆ"squid:ClassVariableVisibilityCheck"SMake _shared a static final constant or non-public and provide accessors if needed.(äøÎÃ8ä²¥İ-
+tsquid:S00116"PRename this field "_gson" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ«´€şÿÿÿÿ8¨©†Ÿİ-
+Ksquid:S1444"-Make this "public static _shared" field final(äøÎÃ8ä²¥İ-

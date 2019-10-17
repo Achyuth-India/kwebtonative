@@ -1,0 +1,9 @@
+
+rsquid:S00116"SRename this field "_sendBtn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µüçö8äøÛ≈›-
+xsquid:S00116"YRename this field "_receivedMsgTv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ﬂçóñ8◊±ˆ≈›-
+wsquid:S00116"XRename this field "_kwebtonative" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ∫¿¨8¢∏‰≈›-
+wsquid:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(åÕòû8•∆â∆›-
+psquid:S00116"QRename this field "_msgEt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ˚›È8ÁÉˆ≈›-
+rsquid:S00116"SRename this field "_context" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú∫Ä≤8•∆â∆›-
+rsquid:S00116"SRename this field "_webview" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(∆ÛÂ±8ıø†≈›-
+\squid:UnusedPrivateMethodE"0Remove this unused private "setUpEvents" method.(°ÛΩØ8â€Î≈›-
