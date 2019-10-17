@@ -1,8 +1,6 @@
 ; (function () {
 
-    var host = window.location.host;
-
-    var nativeDispatcher = {
+    let nativeDispatcher = {
         callbacks: {},
 
         send: function (envelope) {
@@ -12,8 +10,8 @@
         // `type` can either be "event" or "callback"
         dispatchMessage: function (type, envelope) {
 
-            var src = "kwebtonative://" + type + "/?" + encodeURIComponent(JSON.stringify(envelope));
-            var iframe = document.createElement("iframe");
+            let src = "kwebtonative://" + type + "/?" + encodeURIComponent(JSON.stringify(envelope));
+            let iframe = document.createElement("iframe");
             iframe.setAttribute("src", src);
             document.documentElement.appendChild(iframe);
             iframe.parentNode.removeChild(iframe);
@@ -21,7 +19,7 @@
         }
     };
 
-    var IframeDispatcher = {
+    let IframeDispatcher = {
 
         callbacks: {},
 
@@ -35,7 +33,7 @@
         }
     };
 
-    var KWebToNative = {
+    let KWebToNative = {
         listeners: {},
 
         dispatchers: [],
@@ -64,7 +62,7 @@
 
             payload = payload || {};
 
-            var envelope = this.createEnvelope(type, payload);
+            let envelope = this.createEnvelope(type, payload);
 
             this.dispatchers.forEach(function (dispatcher) {
                 dispatcher.send(envelope);
@@ -76,10 +74,10 @@
         // Will execute every function, FIFO order, that was attached to this event type.
         trigger: function (type, json) {
 
-            var listenerList = this.listeners[type] || [];
+            let listenerList = this.listeners[type] || [];
 
-            for (var index = 0; index < listenerList.length; index++) {
-                var listener = listenerList[index];
+            for (let index = 0; index < listenerList.length; index++) {
+                let listener = listenerList[index];
                 listener(json);
             }
 
@@ -90,7 +88,7 @@
                 return;
             }
 
-            var envelope = event.data.envelope;
+            let envelope = event.data.envelope;
             if (event.data.type == "event") {
                 this.trigger(envelope.type, envelope.id, envelope.payload);
             }
@@ -106,7 +104,7 @@
 
     // Dispatcher detection. Currently only supports iOS.
     // Looking for equivalent Android implementation.
-    var i = 0,
+    let i = 0,
         iOS = false,
         iDevice = ['iPad', 'iPhone', 'iPod'];
 
@@ -117,8 +115,8 @@
         }
     }
 
-    var UIWebView = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
-    var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+    let UIWebView = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+    let isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
 
     if ((iOS && UIWebView) || isAndroid) {
         KWebToNative.dispatchers.push(nativeDispatcher);
